@@ -1,0 +1,219 @@
+{
+	"additionalNodes": [],
+	"additionalParameters": {
+		"root": {
+			"height": 88,
+			"width": 180
+		}
+	},
+	"inputs": [],
+	"outputs": [],
+	"properties": {
+		"1Jse0SLFkAIex9axsiH0XBwGwnYdmYGm": {
+			"height": 79,
+			"title": "sequence",
+			"width": 189,
+			"x": 220,
+			"y": -107
+		},
+		"3xfV6zU2zCSh04xliTHl0cOMwAn0UdDz": {
+			"height": 70,
+			"title": "roleSplit",
+			"width": 202,
+			"x": 432,
+			"y": -40
+		},
+		"FR9TMmClAeLvBRdBds26KchpwbkMcuSO": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 653,
+			"y": -36
+		},
+		"G6OWVV5yzRC7bbgquNmIzpq16rzFMeMR": {
+			"height": 92,
+			"title": "store",
+			"width": 286,
+			"x": 882,
+			"y": -117
+		},
+		"K9pKe8j0TOsvaFqO9T6B1oqeNCuVIB4Y": {
+			"height": 90,
+			"title": "Common.relativeMove",
+			"width": 396,
+			"x": 881,
+			"y": 56
+		},
+		"OcLe455qlz8q2QQh7qDduX5AMnxgRTnN": {
+			"height": 90,
+			"title": "Common.move",
+			"width": 280,
+			"x": 685,
+			"y": 88
+		},
+		"cYQJLvEQFrJIwbp84ByRBG0htfcTkhNr": {
+			"height": 70,
+			"title": "roleSplit",
+			"width": 202,
+			"x": 272,
+			"y": 63
+		},
+		"iToO3iTgvjXqRDEjwQWcLp50CAULs7Yg": {
+			"height": 92,
+			"title": "store",
+			"width": 286,
+			"x": 879,
+			"y": -31
+		},
+		"sOsDgNG0rlewTlXRzIl48kCwZcJXsWy8": {
+			"height": 54,
+			"title": "success",
+			"width": 132,
+			"x": 505,
+			"y": 39
+		},
+		"tIKGapniQDIo9iwuqrpc4iI0HL4iJ4MO": {
+			"height": 94,
+			"title": "store",
+			"width": 347,
+			"x": 881,
+			"y": -202
+		},
+		"zILGNk3InqM8uuM0FhxeEzZLZfougdKO": {
+			"height": 113,
+			"title": "store",
+			"width": 296,
+			"x": 494,
+			"y": -162
+		}
+	},
+	"roles": [ {
+		"categories": [ "nota_sta_sailingAI.commander" ],
+		"name": "Role 0"
+	}, {
+		"categories": [ "Common.airUnits", "Common.bomberAirUnits", "Common.builders", "Common.fighterAirUnits", "Common.groundUnits", "Common.mobileBuilders", "Common.transports" ],
+		"name": "Role 2"
+	} ],
+	"root": {
+		"children": [ {
+			"children": [],
+			"id": "zILGNk3InqM8uuM0FhxeEzZLZfougdKO",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "var",
+				"value": "wind_data"
+			}, {
+				"name": "value",
+				"value": "nota_sta_sailingAI.Wind()"
+			}, {
+				"name": "scriptName",
+				"value": "store"
+			} ],
+			"scriptName": "store"
+		}, {
+			"children": [ {
+				"children": [ {
+					"children": [],
+					"id": "tIKGapniQDIo9iwuqrpc4iI0HL4iJ4MO",
+					"nodeType": "luaCommand",
+					"parameters": [ {
+						"name": "var",
+						"value": "com_pos"
+					}, {
+						"name": "value",
+						"value": "nota_sta_sailingAI.CommanderPosition()"
+					}, {
+						"name": "scriptName",
+						"value": "store"
+					} ],
+					"scriptName": "store"
+				}, {
+					"children": [],
+					"id": "G6OWVV5yzRC7bbgquNmIzpq16rzFMeMR",
+					"nodeType": "luaCommand",
+					"parameters": [ {
+						"name": "var",
+						"value": "_x"
+					}, {
+						"name": "value",
+						"value": "com_pos.X + wind_data.dirX*25"
+					}, {
+						"name": "scriptName",
+						"value": "store"
+					} ],
+					"scriptName": "store"
+				}, {
+					"children": [],
+					"id": "iToO3iTgvjXqRDEjwQWcLp50CAULs7Yg",
+					"nodeType": "luaCommand",
+					"parameters": [ {
+						"name": "var",
+						"value": "_z"
+					}, {
+						"name": "value",
+						"value": "com_pos.Z + wind_data.dirZ*25"
+					}, {
+						"name": "scriptName",
+						"value": "store"
+					} ],
+					"scriptName": "store"
+				}, {
+					"children": [],
+					"id": "K9pKe8j0TOsvaFqO9T6B1oqeNCuVIB4Y",
+					"nodeType": "luaCommand",
+					"parameters": [ {
+						"name": "dist",
+						"value": "{x = wind_data.dirX*25, z = wind_data.dirZ*25}"
+					}, {
+						"name": "fight",
+						"value": "false"
+					}, {
+						"name": "scriptName",
+						"value": "Common.relativeMove"
+					} ],
+					"scriptName": "Common.relativeMove"
+				} ],
+				"id": "FR9TMmClAeLvBRdBds26KchpwbkMcuSO",
+				"nodeType": "sequence",
+				"parameters": []
+			}, {
+				"children": [],
+				"id": "OcLe455qlz8q2QQh7qDduX5AMnxgRTnN",
+				"nodeType": "luaCommand",
+				"parameters": [ {
+					"name": "pos",
+					"value": "{x = _x, z = _z}"
+				}, {
+					"name": "fight",
+					"value": "false"
+				}, {
+					"name": "scriptName",
+					"value": "Common.move"
+				} ],
+				"scriptName": "Common.move"
+			} ],
+			"id": "3xfV6zU2zCSh04xliTHl0cOMwAn0UdDz",
+			"nodeType": "roleSplit",
+			"parameters": [ {
+				"name": "mode",
+				"value": "all-success"
+			} ]
+		}, {
+			"children": [ {
+				"children": [],
+				"id": "sOsDgNG0rlewTlXRzIl48kCwZcJXsWy8",
+				"nodeType": "success",
+				"parameters": []
+			} ],
+			"id": "cYQJLvEQFrJIwbp84ByRBG0htfcTkhNr",
+			"nodeType": "roleSplit",
+			"parameters": [ {
+				"name": "mode",
+				"value": "all-success"
+			} ]
+		} ],
+		"id": "1Jse0SLFkAIex9axsiH0XBwGwnYdmYGm",
+		"nodeType": "sequence",
+		"parameters": []
+	}
+}
