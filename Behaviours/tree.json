@@ -13,78 +13,64 @@
 			"height": 79,
 			"title": "sequence",
 			"width": 189,
-			"x": 220,
-			"y": -107
+			"x": 184,
+			"y": -1
 		},
 		"3xfV6zU2zCSh04xliTHl0cOMwAn0UdDz": {
 			"height": 70,
 			"title": "roleSplit",
 			"width": 202,
-			"x": 432,
-			"y": -40
+			"x": 396,
+			"y": -9
 		},
 		"FR9TMmClAeLvBRdBds26KchpwbkMcuSO": {
 			"height": 60,
 			"title": "sequence",
 			"width": 143,
-			"x": 653,
-			"y": -36
+			"x": 614,
+			"y": -1
 		},
 		"G6OWVV5yzRC7bbgquNmIzpq16rzFMeMR": {
 			"height": 92,
 			"title": "store",
 			"width": 286,
-			"x": 882,
-			"y": -117
+			"x": 837,
+			"y": -78
 		},
 		"K9pKe8j0TOsvaFqO9T6B1oqeNCuVIB4Y": {
 			"height": 90,
 			"title": "Common.relativeMove",
 			"width": 396,
-			"x": 881,
-			"y": 56
+			"x": 809,
+			"y": 98
 		},
 		"OcLe455qlz8q2QQh7qDduX5AMnxgRTnN": {
 			"height": 90,
 			"title": "Common.move",
 			"width": 280,
-			"x": 685,
-			"y": 88
-		},
-		"cYQJLvEQFrJIwbp84ByRBG0htfcTkhNr": {
-			"height": 70,
-			"title": "roleSplit",
-			"width": 202,
-			"x": 272,
-			"y": 63
+			"x": 485,
+			"y": 77
 		},
 		"iToO3iTgvjXqRDEjwQWcLp50CAULs7Yg": {
 			"height": 92,
 			"title": "store",
 			"width": 286,
-			"x": 879,
-			"y": -31
-		},
-		"sOsDgNG0rlewTlXRzIl48kCwZcJXsWy8": {
-			"height": 54,
-			"title": "success",
-			"width": 132,
-			"x": 505,
-			"y": 39
+			"x": 826,
+			"y": 10
 		},
 		"tIKGapniQDIo9iwuqrpc4iI0HL4iJ4MO": {
 			"height": 94,
 			"title": "store",
 			"width": 347,
-			"x": 881,
-			"y": -202
+			"x": 829,
+			"y": -163
 		},
 		"zILGNk3InqM8uuM0FhxeEzZLZfougdKO": {
 			"height": 113,
 			"title": "store",
 			"width": 296,
-			"x": 494,
-			"y": -162
+			"x": 340,
+			"y": -131
 		}
 	},
 	"roles": [ {
@@ -193,19 +179,6 @@
 				"scriptName": "Common.move"
 			} ],
 			"id": "3xfV6zU2zCSh04xliTHl0cOMwAn0UdDz",
-			"nodeType": "roleSplit",
-			"parameters": [ {
-				"name": "mode",
-				"value": "all-success"
-			} ]
-		}, {
-			"children": [ {
-				"children": [],
-				"id": "sOsDgNG0rlewTlXRzIl48kCwZcJXsWy8",
-				"nodeType": "success",
-				"parameters": []
-			} ],
-			"id": "cYQJLvEQFrJIwbp84ByRBG0htfcTkhNr",
 			"nodeType": "roleSplit",
 			"parameters": [ {
 				"name": "mode",
